@@ -2,9 +2,6 @@
 
 A cutting-edge, production-ready multistep form application with enterprise-grade features, stunning UI/UX, and robust functionality. Built with modern web technologies and best practices.
 
-## 🚀 Live Demo
-[Add your deployment link here]
-
 ## 📋 Table of Contents
 - [Features](#-features)
 - [Tech Stack](#-tech-stack)
@@ -89,5 +86,6 @@ A cutting-edge, production-ready multistep form application with enterprise-grad
 - **Lighthouse CI** (Performance auditing)
 
 ## 🏗 Architecture
+
 
 ### Project Structure
