@@ -1,0 +1,232 @@
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        margin: 10px;
+        border-radius: 15px;
+    }
+    
+    .progress-container,
+    .form-container {
+        padding: 25px;
+    }
+    
+    .form-header h1 {
+        font-size: 24px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .step-indicators {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .step {
+        flex: 0 0 calc(33.333% - 10px);
+        margin-bottom: 15px;
+    }
+    
+    .step-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    
+    .step-label {
+        font-size: 12px;
+    }
+    
+    .skills-container,
+    .radio-group {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+    
+    .form-navigation {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .step-counter {
+        order: -1;
+    }
+    
+    .success-actions {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        background: white;
+    }
+    
+    .container {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+    }
+    
+    .progress-container {
+        padding: 20px 15px;
+    }
+    
+    .form-container {
+        padding: 20px;
+    }
+    
+    .form-header h1 {
+        font-size: 20px;
+    }
+    
+    .form-step h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .input-with-icon input,
+    .input-with-icon select,
+    .input-with-icon textarea {
+        padding: 12px 12px 12px 45px;
+        font-size: 14px;
+    }
+    
+    .skills-container,
+    .radio-group {
+        grid-template-columns: 1fr;
+    }
+    
+    .review-item {
+        flex-direction: column;
+        gap: 5px;
+    }
+    
+    .review-label {
+        min-width: auto;
+        font-size: 14px;
+    }
+    
+    .terms-agreement {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+    
+    .storage-info {
+        font-size: 12px;
+        padding: 10px;
+    }
+    
+    .badge {
+        font-size: 10px;
+        padding: 3px 8px;
+    }
+}
+
+/* Small Mobile Styles */
+@media (max-width: 360px) {
+    .step {
+        flex: 0 0 calc(50% - 10px);
+    }
+    
+    .step-indicators {
+        gap: 10px;
+    }
+    
+    .step-icon {
+        width: 35px;
+        height: 35px;
+        font-size: 14px;
+    }
+    
+    .btn {
+        padding: 12px 20px;
+        font-size: 14px;
+    }
+    
+    .review-container {
+        padding: 15px;
+    }
+    
+    .alert {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .form-grid {
+        gap: 30px;
+    }
+    
+    .skills-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .success-actions {
+        gap: 30px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    .form-navigation,
+    .storage-info,
+    .success-actions {
+        display: none !important;
+    }
+    
+    .container {
+        box-shadow: none;
+        margin: 0;
+    }
+    
+    body {
+        background: white;
+    }
+    
+    .review-container {
+        break-inside: avoid;
+    }
+}
+
+/* High Contrast Mode */
+@media (prefers-contrast: high) {
+    .btn-primary {
+        background: #0000ff;
+        color: #ffff00;
+    }
+    
+    .input-with-icon input:focus {
+        border-color: #0000ff;
+        outline: 3px solid #ffff00;
+    }
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
